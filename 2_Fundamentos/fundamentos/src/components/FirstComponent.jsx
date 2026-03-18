@@ -1,3 +1,5 @@
+import MyComponent from "./MyComponent";
+
 const FirstComponent = () => {
 	return (
 		<div>
@@ -6,6 +8,7 @@ const FirstComponent = () => {
 				Lorem ipsum dolor sit, amet consectetur adipisicing elit.
 				Numquam, quos mollitia. Iste eligendi molestiae ex!
 			</p>
+			<MyComponent />
 		</div>
 	);
 };

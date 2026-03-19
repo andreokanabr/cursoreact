@@ -3,6 +3,15 @@ const Events = () => {
 		console.log(e);
 		console.log("Evento disparado");
 	};
+
+	const renderSomething = (x) => {
+		if (x) {
+			return <h1>Renderizando isso</h1>;
+		} else {
+			return <h1>Também posso renderizando isso</h1>;
+		}
+	};
+
 	return (
 		<div>
 			<div>
@@ -24,6 +33,9 @@ const Events = () => {
 					Clica Aqui, por favor.
 				</button> */}
 			</div>
+			<hr />
+			{renderSomething(true)}
+			{renderSomething(false)}
 		</div>
 	);
 };

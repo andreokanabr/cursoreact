@@ -15,7 +15,7 @@ function App() {
 	];
 	return (
 		<div className="App">
-			<h1>Showroom de carros</h1>
+			<h1>Lista de carros</h1>
 			<div className="car-container">
 				{Cars.map((c) => (
 					<Car c={c} />

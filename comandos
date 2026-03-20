@@ -2,7 +2,7 @@ Criar projeto com:
 
 npx create-react-app hello-world
 
-ou Criar projeto com vitte (https://vite.dev/):
+RRecomendado: Criar projeto com vite (https://vite.dev/):
 
 npm create vite@latest
 

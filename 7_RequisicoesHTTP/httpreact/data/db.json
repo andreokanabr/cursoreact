@@ -1,11 +1,6 @@
 {
   "products": [
     {
-      "id": "1",
-      "name": "Camisa",
-      "price": 59.9
-    },
-    {
       "id": "2",
       "name": "Calça vermelha",
       "price": 90
@@ -31,11 +26,6 @@
       "price": 20
     },
     {
-      "name": "Camisa Personalizada",
-      "price": "50",
-      "id": "p-FbPSIoVCE"
-    },
-    {
       "name": "Action Figures",
       "price": "80",
       "id": "ZKMxqttiXVM"
@@ -49,11 +39,6 @@
       "name": "Guarda-Chuva",
       "price": "10",
       "id": "m20vDg6cuT8"
-    },
-    {
-      "name": "Teclado",
-      "price": "110",
-      "id": "vfDmSqek_V4"
     },
     {
       "name": "cadeira",
@@ -79,16 +64,6 @@
       "name": "Carrinho de brinquedo",
       "price": "25",
       "id": "sdzVWq1e43M"
-    },
-    {
-      "name": "Microofone",
-      "price": "120",
-      "id": "3aOP-9D58-I"
-    },
-    {
-      "name": "Mic 3000",
-      "price": "2500",
-      "id": "_CohoIPwYS8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

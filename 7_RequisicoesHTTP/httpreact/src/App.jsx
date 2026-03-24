@@ -7,12 +7,14 @@ import { useFetch } from "./hooks/useFetch";
 
 // Port changes as configured
 const url = "http://localhost:5179/products";
+// 8 - errar url para mostrar erro
+// const url = "http://localhost:5178/products";
 
 function App() {
 	const [products, setProducts] = useState([]);
 
 	//4 - custom
-	const { data: itens, httpConfig, loading } = useFetch(url);
+	const { data: itens, httpConfig, loading, error } = useFetch(url);
 
 	const [name, setName] = useState("");
 	const [price, setPrice] = useState("");
@@ -72,17 +74,28 @@ function App() {
 		setPrice("");
 	};
 
+	/* 9 - desafio */
+	const handleRemove = (id) => {
+		httpConfig(id, "DELETE");
+	};
+
 	return (
 		<div className="App">
 			<h2>Lista de produtos</h2>
 			{/* 6 - loading */}
 			{loading && <p> Carregando dados...</p>}
+			{error && <p>{error}</p>}
 			{!loading && (
 				<ul>
 					{itens
 						&& itens.map((product) => (
 							<li key={product.id}>
 								{product.name} - R$: {product.price}
+								{/* 9 - desafio */}{" "}
+								<button
+									onClick={() => handleRemove(product.id)}>
+									🗑️
+								</button>
 							</li>
 						))}
 				</ul>
@@ -109,11 +122,6 @@ function App() {
 						/>
 					</label>
 					{/* 7 - state de loading no post */}
-					{loading ? (
-						<p>Aguarde!</p>
-					) : (
-						<input type="submit" value="Criar" />
-					)}
 					{/* {loading && (
 						<input type="submit" disable value="Aguarde..." />
 					)}

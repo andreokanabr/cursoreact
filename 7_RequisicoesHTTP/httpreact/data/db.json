@@ -69,6 +69,26 @@
       "name": "Touca",
       "price": "30",
       "id": "DHig3MY4Lu0"
+    },
+    {
+      "name": "Monitor",
+      "price": "1000",
+      "id": "2VYCamteiLk"
+    },
+    {
+      "name": "Carrinho de brinquedo",
+      "price": "25",
+      "id": "sdzVWq1e43M"
+    },
+    {
+      "name": "Microofone",
+      "price": "120",
+      "id": "3aOP-9D58-I"
+    },
+    {
+      "name": "Mic 3000",
+      "price": "2500",
+      "id": "_CohoIPwYS8"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"

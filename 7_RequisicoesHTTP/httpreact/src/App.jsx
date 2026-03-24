@@ -12,7 +12,7 @@ function App() {
 	const [products, setProducts] = useState([]);
 
 	//4 - custom
-	const { data: itens, httpConfig } = useFetch(url);
+	const { data: itens, httpConfig, loading } = useFetch(url);
 
 	const [name, setName] = useState("");
 	const [price, setPrice] = useState("");
@@ -75,14 +75,18 @@ function App() {
 	return (
 		<div className="App">
 			<h2>Lista de produtos</h2>
-			<ul>
-				{itens
-					&& itens.map((product) => (
-						<li key={product.id}>
-							{product.name} - R$: {product.price}
-						</li>
-					))}
-			</ul>
+			{/* 6 - loading */}
+			{loading && <p> Carregando dados...</p>}
+			{!loading && (
+				<ul>
+					{itens
+						&& itens.map((product) => (
+							<li key={product.id}>
+								{product.name} - R$: {product.price}
+							</li>
+						))}
+				</ul>
+			)}
 			<div className="add-product">
 				<p>Adicionar produto:</p>
 				<form onSubmit={handleSubmit}>
@@ -104,7 +108,23 @@ function App() {
 							onChange={(e) => setPrice(e.target.value)}
 						/>
 					</label>
-					<input type="submit" value="Criar" />
+					{/* 7 - state de loading no post */}
+					{loading ? (
+						<p>Aguarde!</p>
+					) : (
+						<input type="submit" value="Criar" />
+					)}
+					{/* {loading && (
+						<input type="submit" disable value="Aguarde..." />
+					)}
+					{!loading && (
+						<input type="submit" value="Criar" />
+					)} */}
+					{loading ? (
+						<p>Aguarde!</p>
+					) : (
+						<input type="submit" value="Criar" />
+					)}
 				</form>
 			</div>
 		</div>

@@ -1,0 +1,75 @@
+{
+  "products": [
+    {
+      "id": "1",
+      "name": "Camisa",
+      "price": 59.9
+    },
+    {
+      "id": "2",
+      "name": "Calça vermelha",
+      "price": 90
+    },
+    {
+      "id": "3",
+      "name": "Boné aba reta",
+      "price": 29.9
+    },
+    {
+      "id": "4",
+      "name": "Oculos Escuros",
+      "price": 57.9
+    },
+    {
+      "id": "5",
+      "name": "Meia Branca",
+      "price": 15
+    },
+    {
+      "id": "6",
+      "name": "Pulseira",
+      "price": 20
+    },
+    {
+      "name": "Camisa Personalizada",
+      "price": "50",
+      "id": "p-FbPSIoVCE"
+    },
+    {
+      "name": "Action Figures",
+      "price": "80",
+      "id": "ZKMxqttiXVM"
+    },
+    {
+      "name": "Capa de chuva",
+      "price": "50.90",
+      "id": "zgU5H9z0QOY"
+    },
+    {
+      "name": "Guarda-Chuva",
+      "price": "10",
+      "id": "m20vDg6cuT8"
+    },
+    {
+      "name": "Teclado",
+      "price": "110",
+      "id": "vfDmSqek_V4"
+    },
+    {
+      "name": "cadeira",
+      "price": "200",
+      "id": "seQ7aVHGYno"
+    },
+    {
+      "name": "Luva",
+      "price": "15",
+      "id": "1aQMw39TtC8"
+    },
+    {
+      "name": "Touca",
+      "price": "30",
+      "id": "DHig3MY4Lu0"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}

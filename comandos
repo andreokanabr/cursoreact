@@ -9,4 +9,4 @@ npm create vite@latest
 docker-compose up --build
 
 npm run dev
-mpm run server
+npm run server

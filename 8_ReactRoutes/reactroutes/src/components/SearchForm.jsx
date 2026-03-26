@@ -9,7 +9,10 @@ export const SearchForm = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
-		navigate("/search?name=" + query);
+		// versão atual, pega tudo
+		navigate("/search?name_like=" + query);
+		// versão antiga
+		// navigate("/search?q=" + query);
 	};
 	return (
 		<form onSubmit={handleSubmit}>

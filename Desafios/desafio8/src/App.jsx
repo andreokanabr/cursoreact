@@ -10,7 +10,8 @@ function App() {
 	return (
 		<div>
 			<BrowserRouter>
-				<h1>Desafio 8/ Tarefa 8 - Páginas</h1>
+				<h1>Desafio 8 </h1>
+				<h1>Tarefa 8</h1>
 				<Navbar />
 				<Routes>
 					<Route path="/" element={<Home />} />

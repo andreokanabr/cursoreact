@@ -15,16 +15,17 @@ const Navbar = () => {
 						className={({ isActive }) =>
 							isActive ? styles.active : styles.inactive
 						}>
-						Home
+						🏠 Home
 					</NavLink>
 				</li>
+
 				<li>
 					<NavLink
-						to="/login"
+						to="/about"
 						className={({ isActive }) =>
 							isActive ? styles.active : styles.inactive
 						}>
-						Entrar
+						ℹ️ Sobre
 					</NavLink>
 				</li>
 				<li>
@@ -33,16 +34,16 @@ const Navbar = () => {
 						className={({ isActive }) =>
 							isActive ? styles.active : styles.inactive
 						}>
-						Cadastrar
+						📋 Cadastrar
 					</NavLink>
 				</li>
 				<li>
 					<NavLink
-						to="/about"
+						to="/login"
 						className={({ isActive }) =>
 							isActive ? styles.active : styles.inactive
 						}>
-						Sobre
+						Login 🔒
 					</NavLink>
 				</li>
 			</ul>

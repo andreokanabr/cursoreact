@@ -16,6 +16,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Login from "./pages/Login/Login";
 import Register from "./pages/Register/Register";
+import CreatePost from "./pages/CreatePost/CreatePost";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 // context
 import { AuthProvider } from "./context/AuthContext";
@@ -46,17 +48,37 @@ function App() {
 							{/* rotas */}
 							<Route path="/" element={<Home />} />
 							<Route path="/about" element={<About />} />
-							<Route path="/login" element={<Login />} />
-							<Route path="/register" element={<Register />} />
-							{/* redirecionamento */}
-							<Route path="/home" element={<Navigate to="/" />} />
 							<Route
-								path="/sobre"
-								element={<Navigate to="/about" />}
+								path="/login"
+								element={
+									!user ? <Login /> : <Navigate to="/" />
+								}
 							/>
 							<Route
-								path="/cadastrar"
-								element={<Navigate to="/register" />}
+								path="/register"
+								element={
+									!user ? <Register /> : <Navigate to="/" />
+								}
+							/>
+							<Route
+								path="/posts/create"
+								element={
+									user ? (
+										<CreatePost />
+									) : (
+										<Navigate to="/login" />
+									)
+								}
+							/>
+							<Route
+								path="/dashboard"
+								element={
+									user ? (
+										<Dashboard />
+									) : (
+										<Navigate to="/login" />
+									)
+								}
 							/>
 						</Routes>
 					</div>

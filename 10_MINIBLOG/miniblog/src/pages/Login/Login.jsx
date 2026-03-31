@@ -31,6 +31,7 @@ const Login = () => {
 						name="password"
 						required
 						placeholder="🔑 Insira a senha"
+						autoComplete="true"
 						onChange={(e) => setPassword(e.target.value)}
 						value={password}
 					/>

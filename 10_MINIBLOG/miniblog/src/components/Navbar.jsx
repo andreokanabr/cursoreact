@@ -37,7 +37,7 @@ const Navbar = () => {
 								className={({ isActive }) =>
 									isActive ? styles.active : styles.inactive
 								}>
-								Entrar
+								🔒 Entrar
 							</NavLink>
 						</li>
 						<li>
@@ -46,7 +46,7 @@ const Navbar = () => {
 								className={({ isActive }) =>
 									isActive ? styles.active : styles.inactive
 								}>
-								Cadastrar
+								📋 Cadastrar
 							</NavLink>
 						</li>
 					</>
@@ -59,7 +59,7 @@ const Navbar = () => {
 								className={({ isActive }) =>
 									isActive ? styles.active : styles.inactive
 								}>
-								Novo post
+								📝 Novo post
 							</NavLink>
 						</li>
 						<li>
@@ -68,7 +68,7 @@ const Navbar = () => {
 								className={({ isActive }) =>
 									isActive ? styles.active : styles.inactive
 								}>
-								Dashboard
+								📈 Dashboard
 							</NavLink>
 						</li>
 					</>
@@ -79,7 +79,7 @@ const Navbar = () => {
 						className={({ isActive }) =>
 							isActive ? styles.active : styles.inactive
 						}>
-						Sobre
+						ℹ️️ Sobre
 					</NavLink>
 				</li>
 				{/* opção 1 - usando button */}

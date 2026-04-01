@@ -1,5 +1,7 @@
+// CSS
 import styles from "./Register.module.css";
 
+// Hooks
 import { useState, useEffect } from "react";
 import useAuthentication from "../../hooks/useAuthentication";
 
@@ -61,7 +63,7 @@ const Register = () => {
 						type="email"
 						name="email"
 						required
-						placeholder="📧 E-mail do usuário"
+						placeholder="📧 Email do usuário"
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 					/>
@@ -90,10 +92,10 @@ const Register = () => {
 						onChange={(e) => setConfirmPassword(e.target.value)}
 					/>
 				</label>
-				{!loading && <button className="btn">Cadastrar</button>}
+				{!loading && <button className="btn">📋 Cadastrar</button>}
 				{loading && (
 					<button className="btn" disabled>
-						Aguarde...
+						⏳ Aguarde...
 					</button>
 				)}
 				{error && <p className="error">{error}</p>}

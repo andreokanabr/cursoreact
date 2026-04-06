@@ -1,0 +1,16 @@
+.app {
+	font-family: Arial, sans-serif;
+	padding: 20px;
+}
+
+table,
+th,
+td {
+	width: 30%;
+	border: 1px solid white;
+	border-collapse: collapse;
+}
+th,
+td {
+	background-color: #96d4d4;
+}

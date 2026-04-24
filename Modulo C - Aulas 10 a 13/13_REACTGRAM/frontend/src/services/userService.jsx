@@ -11,7 +11,7 @@ const profile = async (data, token) => {
 
 		return res;
 	} catch (error) {
-		console.log(error);
+		console.log("Atenção", error);
 	}
 };
 
@@ -26,7 +26,7 @@ const updateProfile = async (data, token) => {
 
 		return res;
 	} catch (error) {
-		console.log(error);
+		console.log("Atenção", error);
 	}
 };
 
@@ -41,7 +41,7 @@ const getUserDetails = async (id) => {
 
 		return res;
 	} catch (error) {
-		console.log(error);
+		console.log("Atenção", error);
 	}
 };
 

@@ -31,3 +31,17 @@ npm run server
 ```
 npm i tailwindcss @tailwindcss/vite framer-motion lucide-react
 ```
+
+No 16, o primeiro comando é:
+
+```
+npm init -y
+```
+
+Apos isso add nodemon e o express
+
+No Typescript do 17, apos baixar typescript, comandos para uso:
+
+```
+ tsc index.ts
+```

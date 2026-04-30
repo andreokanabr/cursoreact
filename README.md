@@ -44,4 +44,11 @@ No Typescript do 17, apos baixar typescript, comandos para uso:
 
 ```
  tsc index.ts
+
+```
+
+Criação de projetos react + ts
+
+```
+npm create vite@latest <nomeprojeto> -- --template react-ts
 ```

@@ -51,4 +51,11 @@ Criação de projetos react + ts
 
 ```
 npm create vite@latest <nomeprojeto> -- --template react-ts
+
+```
+
+Pacotes do 20:
+
+```
+npm i react-icons react-router-dom
 ```
